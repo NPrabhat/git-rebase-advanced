@@ -4,7 +4,12 @@ class Calculator {
     }
     
     add(num) {
-        this.result = parseFloat((this.result + num).toFixed(2));
+        this.result += num;
+        return this;
+    }
+    
+    subtract(num) {
+        this.result -= num;
         return this;
     }
 }
