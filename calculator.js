@@ -4,7 +4,7 @@ class Calculator {
     }
     
     add(num) {
-        this.result += num;
+        this.result = parseFloat((this.result + num).toFixed(2));
         return this;
     }
 }
